@@ -1,0 +1,34 @@
+{
+  "name": "manifest-asset-plugin",
+  "version": "1.0.0",
+  "description": "Vite plugin that generates manifest-asset.json at build time",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "tsc"
+  },
+  "keywords": [
+    "vite",
+    "vite-plugin",
+    "manifest"
+  ],
+  "author": "",
+  "license": "MIT",
+  "peerDependencies": {
+    "vite": ">=5.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.0",
+    "typescript": "^5.8.0",
+    "vite": "^8.0.1"
+  }
+}
