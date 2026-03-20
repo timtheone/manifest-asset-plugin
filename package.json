@@ -1,5 +1,5 @@
 {
-  "name": "manifest-asset-plugin",
+  "name": "@timtheone/manifest-asset-plugin",
   "version": "1.0.0",
   "description": "Vite plugin that generates manifest-asset.json from the Vite manifest",
   "type": "module",
@@ -25,6 +25,9 @@
   "license": "MIT",
   "peerDependencies": {
     "vite": ">=5.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "devDependencies": {
     "@types/node": "^25.5.0",
